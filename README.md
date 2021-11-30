@@ -13,8 +13,12 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ## Directory Structure
 
-You can find info about how the directory should be structured on the [Jekyll site](http://jekyllrb.com/docs/structure/) or 
+You can find info about how the directory should be structured on the [Jekyll site](http://jekyllrb.com/docs/structure/) or in [this example project](https://github.com/ablarry91/portfolio).
 
 ## Command Line BS
 
-If you're fucking around with command-line and you've forgotten how Vim works, [here's how to exit edit mode at least.](https://www.cyberciti.biz/faq/linux-unix-vim-save-and-quit-command/)
+If you're fucking around with command-line and you've forgotten how Vim works, at least here's how to exit edit mode in Terminal if you're panicking:
++To save
+++press `esc`, type `:w`, hit `enter`
++To exit
+++press `esc`, type `:q!`, hit `enter`
