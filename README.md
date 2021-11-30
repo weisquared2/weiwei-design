@@ -18,7 +18,9 @@ You can find info about how the directory should be structured on the [Jekyll si
 ## Command Line BS
 
 If you're fucking around with command-line and you've forgotten how Vim works, at least here's how to exit edit mode in Terminal if you're panicking:
-+To save
-++press `esc`, type `:w`, hit `enter`
-+To exit
-++press `esc`, type `:q!`, hit `enter`
+
++ To save
+++ press `esc`, type `:w`, hit `enter`
+
++ To exit
+++ press `esc`, type `:q!`, hit `enter`
