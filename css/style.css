@@ -1,5 +1,38 @@
 
-body {
-	background-color: red;
-	color: black;
 
+
+body {
+	background-color: #ffd500;
+	color: black;
+	font-family:"IBM Plex Sans", sans-serif;
+}
+
+h1  {
+	font-family: "Playfair Display", sans-serif;
+	font-weight: 700;
+}
+
+nav {
+	border-bottom: 1px black;
+	padding: 20px 40px 20px 40px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	
+	color: black;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:visited{
+	color: black;
+}
