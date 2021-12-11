@@ -1,20 +1,78 @@
+/* import fonts, somehow need to import weights individually? */
 
-
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 
 body {
 	background-color: #ffd500;
 	color: black;
-	font-family:"IBM Plex Sans", sans-serif;
+	font-family:"IBM Plex Sans", Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 0em;
 }
+
+/* font styles */
+
+ p {
+	font-size: 1em;
+	line-height: 1.5em;
+ }
 
 h1  {
-	font-family: "Playfair Display", sans-serif;
+	font-family: "Playfair Display", Georgia, sans-serif;
 	font-weight: 700;
+	font-size: 4em;
+	line-height: 0.9em;
 }
 
+h2  {
+	font-family: "Playfair Display", Georgia, sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	line-height: 0.9em;
+}
+
+/* currently using h3 as a commenting style*/
+h3  {
+	color: magenta;
+	font-weight: 700;
+	line-height: 0.9em;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+	text-underline-offset: 30%;
+}
+
+a:hover {
+	color: #434031;
+}
+
+
+/* site content full-width or not */
+
+.reduced-width {
+	width: 70%;
+	padding-top: 3em;
+	padding-bottom: 6em;
+	padding-left: 6em;
+	padding-right: 6em;
+}
+
+.full-width {
+	width: 100%;
+	padding-top: 3em;
+	padding-bottom: 6em;
+	padding-left: 6em;
+	padding-right: 6em;
+}
+
+
+/* navigation styling */
+
 nav {
-	border-bottom: 1px black;
-	padding: 20px 40px 20px 40px;
+	padding: 1em 3em 1em 3em;
 }
 
 nav ul {
@@ -22,17 +80,40 @@ nav ul {
 	list-style: none;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px;
-	
-	color: black;
-	font-weight: 400;
+
+	/* this is here to override the user agent stylesheet */
+	padding-inline-start: 0px;
+
+}
+
+a.navlink {
+	font-weight: 600;
 	text-decoration: none;
 }
 
-nav ul li {
-	float: left;
+a.navlink:hover {
+	text-decoration: underline;
+	text-underline-offset: 30%;
 }
 
-nav ul li:visited{
+a.navlink:active {
 	color: black;
+	text-decoration: underline;
+}
+
+/* table styling */
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+/* TODO: figure out how to fix width of just the first column to be 25% or something */
+
+td.first {
+	width: 25%;
+}
+
+td {
+	padding: 0.25em 0em 0.25em 0em;
 }
