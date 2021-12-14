@@ -42,11 +42,16 @@ h3  {
 a {
 	color: black;
 	text-decoration: underline;
-	text-underline-offset: 8%;
+	text-decoration-color: black;
+	text-decoration-thickness: 0.1em;
+	text-underline-offset: 0.05em;
 }
 
 a:hover {
-	color: #434031;
+	color: #7e6900;
+	text-decoration-thickness: 0.2em;
+	text-underline-offset: 0em;
+	text-decoration-color:#987f00;
 }
 
 ::selection {
@@ -99,15 +104,20 @@ a.navlink {
 	text-decoration: none;
 }
 
+
 a.navlink:hover {
+	color: #7e6900;
 	text-decoration: underline;
-	text-underline-offset: 8%;
+	text-decoration-thickness: 0.2em;
+	text-underline-offset: 0em;
+	text-decoration-color:#987f00;
 }
 
 a.navlink:active {
 	color: black;
 	text-decoration: underline;
 }
+
 
 /* table styling */
 
