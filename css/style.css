@@ -42,13 +42,21 @@ h3  {
 a {
 	color: black;
 	text-decoration: underline;
-	text-underline-offset: 30%;
+	text-underline-offset: 8%;
 }
 
 a:hover {
 	color: #434031;
 }
 
+::selection {
+	background: black;
+	color: #ffd500; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+	background: black;
+	color: #ffd500; /* Gecko Browsers */
+  }
 
 /* site content full-width or not */
 
@@ -93,7 +101,7 @@ a.navlink {
 
 a.navlink:hover {
 	text-decoration: underline;
-	text-underline-offset: 30%;
+	text-underline-offset: 8%;
 }
 
 a.navlink:active {
@@ -103,17 +111,38 @@ a.navlink:active {
 
 /* table styling */
 
-table {
+td {
+	padding: 0.5em 0em 0.5em 0em;
+	vertical-align: top;
+}
+
+/* CV table specific styling */
+
+table.CV {
 	width: 100%;
 	table-layout: fixed;
 }
 
-/* TODO: figure out how to fix width of just the first column to be 25% or something */
-
-td.first {
+td.CV-table-date {
+	/* sets width of first column in CV table */
 	width: 25%;
+	margin-top: 0em;
 }
 
-td {
-	padding: 0.25em 0em 0.25em 0em;
+ul.CV-table {
+	/* overriding user agent stylesheet */
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+li.position-name {
+	margin-block-start: 0;
+	margin-block-end: 1em;
+	list-style-type: none;
+	list-style-position: inside;
+	text-indent: -1em;
+}
+
+li.position-responsibilities {
+	margin-bottom: 0.5em;
 }
