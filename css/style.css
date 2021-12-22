@@ -68,7 +68,7 @@ a:hover {
 .reduced-width {
 	width: 70%;
 	padding-top: 3em;
-	padding-bottom: 6em;
+	padding-bottom: 9em;
 	padding-left: 6em;
 	padding-right: 6em;
 }
@@ -76,7 +76,7 @@ a:hover {
 .full-width {
 	width: 100%;
 	padding-top: 3em;
-	padding-bottom: 6em;
+	padding-bottom: 9em;
 	padding-left: 6em;
 	padding-right: 6em;
 }
@@ -112,6 +112,10 @@ a.navlink:hover {
 	text-decoration-color:#987f00;
 }
 
+.subtle-text {
+	color: #7e6900;
+	text-decoration-color: #987f00;
+}
 
 /* table styling */
 
@@ -148,5 +152,5 @@ li.position-name {
 }
 
 li.position-responsibilities {
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
