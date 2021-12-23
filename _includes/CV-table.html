@@ -1,5 +1,26 @@
 <table class="CV">
     <tbody>
+        {% for job in site.jobs %}
+        <tr>
+            <td class="CV-table-date"><strong>{{ job.job-date }}</strong></td>
+            <td>
+                <ul class="CV-table">
+                    <li class="position-name"><strong>{{ job.job-position }} @ <a href= "{{ job.company-url }}">{{ job.company-name }}</a></strong>
+                    </li>
+                    <li class="position-responsibilities">
+                        {{job.content}}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- old stuff
+
+<table class="CV">
+    <tbody>
       <tr>
         <td class="CV-table-date"><strong>2020 &mdash; Now</strong></td>
         <td>
@@ -74,3 +95,5 @@
       </tr>
     </tbody>
   </table>
+
+-->
