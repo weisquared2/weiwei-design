@@ -39,6 +39,11 @@ h3  {
 	line-height: 0.9em;
 }
 
+
+.subtle-text {
+	color: #7e6900;
+}
+
 a {
 	color: black;
 	text-decoration: underline;
@@ -48,10 +53,26 @@ a {
 }
 
 a:hover {
-	color: #7e6900;
-	text-decoration-thickness: 0.2em;
-	text-underline-offset: 0em;
-	text-decoration-color:#987f00;
+	text-decoration: none;
+	background: black;
+	color: #ffd500;
+}
+
+a:focus,a:active {
+	border-radius: 3px;
+	outline: 2px solid #7e6900;
+	background-color: #e8c100;
+}
+
+a.subtle-text {
+	text-decoration-color: #987f00;
+}
+
+hr {
+	border: 1px solid #e8c100;
+	width: 100%;
+	margin-block-start: 2em;
+	margin-block-end: 2em;
 }
 
 ::selection {
@@ -104,19 +125,6 @@ a.navlink {
 	text-decoration: none;
 }
 
-
-a.navlink:hover {
-	text-decoration: underline;
-	text-decoration-thickness: 0.2em;
-	text-underline-offset: 0em;
-	text-decoration-color:#987f00;
-}
-
-.subtle-text {
-	color: #7e6900;
-	text-decoration-color: #987f00;
-}
-
 /* table styling */
 
 td {
@@ -137,20 +145,91 @@ td.CV-table-date {
 	margin-top: 0em;
 }
 
-ul.CV-table {
+td.CV-table {
 	/* overriding user agent stylesheet */
 	margin-block-start: 0em;
 	margin-block-end: 0em;
 }
 
-li.position-name {
+p.position-headers {
 	margin-block-start: 0;
 	margin-block-end: 1em;
-	list-style-type: none;
-	list-style-position: inside;
-	text-indent: -1em;
+	font-weight: 600;
 }
 
-li.position-responsibilities {
+p.position-responsibilities {
 	margin-bottom: 1em;
+}
+
+/* contact form styling */
+
+label.help-text {
+	font-size: 0.75em;
+	margin-block-start: 1em;
+	color: #7e6900;
+}
+
+input, textarea {
+	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-size: 1em;
+	
+	padding: 0.5em;
+	margin-block-start: 1em;
+	margin-block-end: 2em;
+	width: 100%;
+
+	border: 2px solid #e8c100;
+	border-radius: 4px;
+	background-color: #ffd500;
+}
+
+input:hover, textarea:hover {
+	border: 2px solid black;
+	outline: none;
+}
+
+input:focus, textarea:focus{
+	border: 2px solid black;
+	outline: 6px solid #e8c100;
+}
+
+button {
+	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-size: 1em;
+	width: 30%;
+	display: block;
+	margin-block-end: 0.5em;
+
+	padding: 0.5em;
+	border: 2px solid #e8c100;
+	border-radius: 4px;
+	background-color: #ffd500;
+}
+
+button:hover, button:active {
+	border: 2px solid black;
+
+	cursor: pointer;
+}
+
+button:focus {
+	border: 2px solid black;
+	outline: 6px solid #e8c100;
+}
+
+::placeholder {
+	color:#7e6900;
+}
+
+/* project styling */
+
+.project-card {
+	border: 2px solid #e8c100;
+	border-radius: 6px;
+	padding: 2em;
+}
+
+img.project-thumbnail {
+	max-width: 30%;
+	border-radius: 6px;
 }
