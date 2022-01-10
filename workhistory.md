@@ -6,8 +6,7 @@ title: "Experience & Skills"
 
 # Experience & Skills
 
-### replace this CV with updated CV
-<p class="subtle-text"> Want a downloadable PDF version of this? <a href="./assets/CV_weiweilin_aug2020.pdf" target="_blank" class="subtle-text">Here you go.</a></p>
+<p class="subtle-text"> Want a downloadable PDF version of this? <a href="./assets/CV_weiweilin.pdf" target="_blank" class="subtle-text">Here you go.</a></p>
 
 As a lifelong learner, I'm a proudly self-taught designer with roots in visual design and a background in neuropsychology & computer science. Looking to combine and expand on my interests, I found my merry way to product and UX design, and haven't looked back since.
 

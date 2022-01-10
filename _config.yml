@@ -1,5 +1,6 @@
 markdown: kramdown
 
 collections:
-- jobs
-- projects
+  jobs:
+  projects:
+    sort_by: project-index

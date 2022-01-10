@@ -7,10 +7,15 @@ title: Projects
 
 # Projects
 
-{% for project in site.projects reversed %}
+{% for project in site.projects %}
 <div class="project-card">
-    <img src="{{project.image-path}}" alt="{{project.image-alt}}" class="project-thumbnail"/>
-    <h2> {{ project.project-tagline }} </h2>
-    <h3> {{ project.project-title }} </h3>
+    <span class="project-thumbnail">
+        <img src="{{project.image-path}}" alt="{{project.image-alt}}" class="project-thumbnail"/>
+    </span>
+    <span class="project-details">
+        <h2 class="project-tagline"> {{ project.project-tagline }} </h2>
+        <h3 class="project-title"> {{ project.project-title }} </h3>
+        {{project.content}}
+    </span>
 </div>
 {% endfor %}

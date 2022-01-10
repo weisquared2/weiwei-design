@@ -8,11 +8,8 @@ project-display: true
 
 ---
 
-this is all the content
-
 Project Description: set a bit of context for what this project is, its objective
 
-
-you can style this part differently:
-
-Project Responsibilities: key words for the skills i contributed to this project.
+<p class="project-responsibilities">
+    Project Responsibilities: key words for the skills i contributed to this project.
+</p>
