@@ -6,7 +6,7 @@ title: Contact
 
 # Contact me
 
-Let's have some fun! You can find me on [LinkedIn](https://linkedin.com/in/weiweilin), or fill out the form below to email me directly.
+Let's have some fun! You can find me on [LinkedIn](https://linkedin.com/in/weiweilin), [Github](https://github.com/weisquared2), or fill out the form below to email me directly.
 
 ---
 
