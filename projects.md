@@ -8,6 +8,7 @@ title: Projects
 # Projects
 
 {% for project in site.projects %}
+{% if project.display == true %}
 <div class="project-card">
     <span class="project-thumbnail">
         <img src="{{project.image-path}}" alt="{{project.image-alt}}" class="project-thumbnail"/>
@@ -18,4 +19,8 @@ title: Projects
         {{project.content}}
     </span>
 </div>
+{% if project.islast != true %}
+<hr>
+{% endif %}
+{% endif %}
 {% endfor %}

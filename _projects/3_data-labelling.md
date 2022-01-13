@@ -1,10 +1,10 @@
 ---
-project-title: how you would refer to this project verbally
-project-tagline: something descriptive, short, catchy
+project-title: Data Labeller &mdash; AI Toolkit
+project-tagline: Streamlining data labelling for AI developers
 image-path: /assets/projthumb_default.png
 image-alt: Default placeholder picture for projects that says project thumbnail.
-project-index: 0
-project-display: true
+display: true
+islast: true
 
 ---
 

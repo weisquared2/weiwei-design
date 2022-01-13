@@ -1,6 +1,6 @@
 /* import fonts, somehow need to import weights individually? */
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 
 body {
@@ -29,14 +29,14 @@ h2  {
 	font-family: "Playfair Display", Georgia, sans-serif;
 	font-weight: 700;
 	font-size: 2em;
-	line-height: 0.9em;
+	line-height: 1em;
 }
 
 /* currently using h3 as a commenting style*/
 h3  {
-	background-color: magenta;
+	color: magenta;
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	line-height: 0.9em;
 }
 
@@ -232,8 +232,8 @@ button:focus {
 /* project styling */
 
 .project-card {
-	border: 2px solid #e8c100;
-	border-radius: 12px;
+	/*border: 2px solid #e8c100;
+	border-radius: 12px;*/
 	padding: 2em;
 	margin-block-end: 2em;
 
@@ -259,14 +259,16 @@ span.project-details {
 
 h2.project-tagline {
 	margin-block-start: 0em;
-	margin-block-end: 0.25em;
+	margin-block-end: 0.5em;
 }
 
 h3.project-title {
 	color: black;
 	background-color: none;
+	font-weight: 400;
 	margin-block-start: 0em;
-	margin-block-end: 1em;
+	margin-block-end: 1.5em;
+	color: #7e6900;
 }
 
 p.project-responsibilities {
