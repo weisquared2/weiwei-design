@@ -5,9 +5,3 @@ source "https://rubygems.org"
 
 # https://github.com/github/pages-gem
 gem "github-pages", group: :jekyll_plugins
-
-# aimed at resolving GHSA-fq42-c5rg-92c2
-gem "nokogiri", ">= 1.13.2"
-
-# aimed at resolving GHSA-fmx4-26r3-wxpf
-gem "commonmarker", ">= 0.23.4"
