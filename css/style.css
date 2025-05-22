@@ -2,12 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
-	background-color: #ffd500;
+	background-color: #F8F2D7;
 	color: black;
-	font-family:"IBM Plex Sans", Helvetica, sans-serif;
+	font-family:"Rubik", Helvetica, sans-serif;
 	font-size: 20px;
+	font-weight:400;
 	margin: 0em;
 }
 
@@ -19,17 +22,21 @@ body {
  }
 
 h1  {
-	font-family: "Playfair Display", Georgia, sans-serif;
-	font-weight: 700;
-	font-size: 4em;
+	font-family: "Instrument Serif", Georgia, sans-serif;
+	font-weight: 400;
+	font-size: 6em;
 	line-height: 0.9em;
+	font-style: italic;
+	color: #4C54E3;
 }
 
 h2  {
-	font-family: "Playfair Display", Georgia, sans-serif;
-	font-weight: 700;
-	font-size: 2em;
+	font-family: "Instrument Serif", Georgia, sans-serif;
+	font-weight: 400;
+	font-size: 4em;
 	line-height: 1em;
+	font-style: italic;
+	color: #F0653A;
 }
 
 /* currently using h3 as a commenting style*/
@@ -42,47 +49,51 @@ h3  {
 
 
 .subtle-text {
-	color: #7e6900;
+	color: #6E6740;
 }
 
 a {
 	color: black;
-	text-decoration: underline;
-	text-decoration-color: black;
-	text-decoration-thickness: 0.1em;
-	text-underline-offset: 0.05em;
+	text-decoration: none;
+	/*text-decoration-color: #F6BE17;
+	text-decoration-thickness: 0.2em;
+	text-underline-offset: -0.2em;*/
+	background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #F6BE17 70%);
+  display: inline;
 }
 
 a:hover {
 	text-decoration: none;
-	background: black;
-	color: #ffd500;
+	/*background: black;
+	color: #ffd500;*/
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F6BE17 0%);
+  display: inline;
 }
 
 a:focus,a:active {
-	border-radius: 3px;
+	/*border-radius: 3px;
 	outline: 2px solid #7e6900;
-	background-color: #e8c100;
+	background-color: #e8c100;*/
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F7D776 0%);
+  display: inline;
 }
 
 a.subtle-text {
-	text-decoration-color: #987f00;
+	text-decoration-color: #F7D776;
 }
 
 hr {
-	border: 1px solid #e8c100;
+	border: 1px solid #DED6AA;
 	width: 100%;
 	margin-block-start: 2em;
 	margin-block-end: 2em;
 }
 
 ::selection {
-	background: black;
-	color: #ffd500; /* WebKit/Blink Browsers */
+	background: #F7D776; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-	background: black;
-	color: #ffd500; /* Gecko Browsers */
+	background: #F7D776; /* Gecko Browsers */
   }
 
 /* site content full-width or not */
@@ -113,14 +124,25 @@ header {
 
 nav {
 	padding: 1em 3em 1em 3em;
-	background-color:#ffd500;
-	border-bottom: 2px solid #e8c100;
+	background-color:#F8F2D7;
+	border-bottom: 2px solid #DED6AA;
+}
+
+div.home {
+	display: flex;
+	list-style: none;
+	align-items: left;
+
+	/* this is here to override the user agent stylesheet */
+	padding-inline-start: 0px;
+
 }
 
 nav ul {
 	display: flex;
 	list-style: none;
-	align-items: center;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
 	justify-content: space-between;
 
 	/* this is here to override the user agent stylesheet */
@@ -128,9 +150,30 @@ nav ul {
 
 }
 
+nav li {
+	align-content: center;
+}
+
+a.homelink {
+	font-family: "Instrument Serif", Georgia, sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	font-style: italic;
+	color: #4C54E3;
+	background: none;
+	float: left;
+}
+
 a.navlink {
-	font-weight: 600;
+	font-weight: 400;
 	text-decoration: none;
+	float: right;
+	background: none;
+}
+
+a.navlink:hover {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F6BE17 0%);
+  display: inline;
 }
 
 /* table styling */
@@ -178,17 +221,17 @@ label.help-text {
 }
 
 input, textarea {
-	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 1em;
-	
+
 	padding: 0.5em;
 	margin-block-start: 1em;
 	margin-block-end: 2em;
 	width: 100%;
 
-	border: 2px solid #e8c100;
+	border: 2px solid #DED6AA;
 	border-radius: 4px;
-	background-color: #ffd500;
+	background-color: #FAF4D7;
 }
 
 input:hover, textarea:hover {
@@ -198,25 +241,26 @@ input:hover, textarea:hover {
 
 input:focus, textarea:focus{
 	border: 2px solid black;
-	outline: 6px solid #e8c100;
+	outline: 6px solid #F7D776;
 }
 
 button {
-	font-family: "IBM Plex Sans", Helvetica, sans-serif;
+	font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 1em;
+	font-weight: 600;
 	width: 30%;
 	display: block;
 	margin-block-end: 0.5em;
 
 	padding: 0.5em;
-	border: 2px solid #e8c100;
+	border: 3px solid #4C54E3;
 	border-radius: 4px;
-	background-color: #ffd500;
+	background-color: #F8F2D7;
+	color: #4C54E3;
 }
 
 button:hover, button:active {
 	border: 2px solid black;
-
 	cursor: pointer;
 }
 
