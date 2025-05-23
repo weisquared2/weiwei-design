@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <script type="text/javascript" src='js/openMobileNav.js'> </script>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <nav role="navigation">
-              <ul>
-                <li><a href="/" class="homelink">Wei-Wei Lin</a></li>
-                <li><a href="/projects" class="navlink">Projects</a></li>
-                <li><a href="/cv" class="navlink">Experience & Skills</a></li>
-                <li><a href="/contact" class="navlink">Contact</a></li>
-              </ul>
+                <div class="home">
+                  <a href="/" class="homelink">Wei-Wei Lin</a>
+                  <a href="javascript:void(0);" class="open-menu" onclick="openMobileNav()" id="open-menu-link">Menu</a>
+                </div>
+                <div class="other-links" id="menu-links">
+                  <a href="/projects" class="navlink">Projects</a>
+                  <a href="/cv" class="navlink">Experience & Skills</a>
+                  <a href="/contact" class="navlink">Contact</a>
+                </div>
             </nav>
         </header>
-        <div class="reduced-width">
+        <div class="body-content">
             <h1 id="experience--skills">Experience &amp; Skills</h1>
 
 <p class="subtle-text"> Want a downloadable PDF version of this? <a href="./assets/CV_weiweilin.pdf" target="_blank" class="subtle-text">Here you go.</a></p>
@@ -30,14 +35,13 @@
 
 <p>Most recently, I lead a team of product designers working on cross-functional UX alignment at <a href="https://unity.com/">Unity</a>.</p>
 
-<table class="CV">
-        <tbody>
-            
-            <tr>
-                <td class="CV-table-date">
+<div class="CV">
+        
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">May 2022 &mdash; Sept 2023</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">Product Design Manager @ <a href="https://unity.com/"> Unity </a></p>
                     <p class="position-responsibilities"> <ul>
   <li>
@@ -57,14 +61,14 @@
   </li>
 </ul>
  </p>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="CV-table-date">
+            </div>
+        </div>
+        
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">Sept 2020 &mdash; May 2022</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">Senior Product Designer @ <a href="https://unity.com/"> Unity </a></p>
                     <p class="position-responsibilities"> <ul>
   <li>
@@ -81,14 +85,14 @@
   </li>
 </ul>
  </p>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="CV-table-date">
+            </div>
+        </div>
+        
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">Apr 2018 &mdash; Apr 2020</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">Product &amp; Visual Designer @ <a href="https://elementai.com/"> Element AI </a></p>
                     <p class="position-responsibilities"> <ul>
   <li>
@@ -99,50 +103,49 @@
   </li>
 </ul>
  </p>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="CV-table-date">
+            </div>
+        </div>
+        
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">Jul 2016 &mdash; Apr 2018</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">Visual Designer @ <a href="https://ssmu.ca/"> Students' Society of McGill University </a></p>
                     <p class="position-responsibilities"> <ul>
   <li>Web design, branding, social media, and print graphics.</li>
 </ul>
  </p>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="CV-table-date">
+            </div>
+        </div>
+        
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">2013 &mdash; 2017</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">Visual Designer @ <a href="/projects"> Freelance </a></p>
                     <p class="position-responsibilities"> <ul>
   <li>Web design &amp; branding projects for clients and student-run organizations. Production of social media, print graphics, video graphics.</li>
 </ul>
  </p>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="CV-table-date">
+            </div>
+        </div>
+        
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">2013 &mdash; 2017</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">Cognitive Science Bachelor's Student @ <a href="https://www.mcgill.ca/"> McGill University </a></p>
                     <p class="position-responsibilities"> <ul>
   <li>Interdisciplinary Arts &amp; Science degree with focus in neuropsychology &amp; computer science.</li>
 </ul>
  </p>
-                </td>
-            </tr>
-            
-        </tbody>
-</table>
+            </div>
+        </div>
+        
+</div>
 
 <h2 id="skills--tools">Skills &amp; Tools</h2>
 
@@ -151,6 +154,8 @@
 <p>I might have been a UX developer in another life, and I’m not ruling it out for this one. I love digging into code to see how it works, and occasionally write my own (like this website!). I take great pleasure in getting into the nitty-gritty of technical concepts.</p>
 
 <p>I could never work alone. I love working with people with all sorts of backgrounds, and I’m constantly learning new ways of working together to leverage the skills of groups I work with. Strategic, intentional communication is at the heart of everything I do: from high-level stakeholder presentations to having effective, well-framed 1:1 conversations.</p>
+
+<p><i>Je parle français aussi!</i></p>
 
         </div>
 

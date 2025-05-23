@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <script type="text/javascript" src='js/openMobileNav.js'> </script>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <nav role="navigation">
-              <ul>
-                <li><a href="/" class="homelink">Wei-Wei Lin</a></li>
-                <li><a href="/projects" class="navlink">Projects</a></li>
-                <li><a href="/cv" class="navlink">Experience & Skills</a></li>
-                <li><a href="/contact" class="navlink">Contact</a></li>
-              </ul>
+                <div class="home">
+                  <a href="/" class="homelink">Wei-Wei Lin</a>
+                  <a href="javascript:void(0);" class="open-menu" onclick="openMobileNav()" id="open-menu-link">Menu</a>
+                </div>
+                <div class="other-links" id="menu-links">
+                  <a href="/projects" class="navlink">Projects</a>
+                  <a href="/cv" class="navlink">Experience & Skills</a>
+                  <a href="/contact" class="navlink">Contact</a>
+                </div>
             </nav>
         </header>
-        <div class="reduced-width">
+        <div class="body-content">
             <h1 id="projects">Projects</h1>
 
 <p class="subtle-text">

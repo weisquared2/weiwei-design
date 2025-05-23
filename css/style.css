@@ -5,27 +5,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+html {
+	font-size: 20px;
+}
+
 body {
 	background-color: #F8F2D7;
 	color: black;
 	font-family:"Rubik", Helvetica, sans-serif;
-	font-size: 20px;
 	font-weight:400;
-	margin: 0em;
+	margin: 0rem;
 }
 
 /* font styles */
 
  p {
-	font-size: 1em;
-	line-height: 1.5em;
+	font-size: 1rem;
+	line-height: 1.5;
  }
 
 h1  {
 	font-family: "Instrument Serif", Georgia, sans-serif;
 	font-weight: 400;
-	font-size: 6em;
-	line-height: 0.9em;
+	font-size: 6rem;
+	line-height: 1;
 	font-style: italic;
 	color: #4C54E3;
 }
@@ -33,20 +36,40 @@ h1  {
 h2  {
 	font-family: "Instrument Serif", Georgia, sans-serif;
 	font-weight: 400;
-	font-size: 4em;
-	line-height: 1em;
+	font-size: 4rem;
+	line-height: 1;
 	font-style: italic;
 	color: #F0653A;
 }
 
-/* currently using h3 as a commenting style*/
+@media (max-width: 800px) {
+	h1  {
+		font-family: "Instrument Serif", Georgia, sans-serif;
+		font-weight: 400;
+		font-size: 4rem;
+		line-height: 1;
+		font-style: italic;
+		color: #4C54E3;
+	}
+
+	h2  {
+		font-family: "Instrument Serif", Georgia, sans-serif;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 1;
+		font-style: italic;
+		color: #F0653A;
+	}
+
+}
+
+/* commenting style */
 h3  {
 	color: magenta;
 	font-weight: 700;
-	font-size: 1.2em;
-	line-height: 0.9em;
+	font-size: 1.2rem;
+	line-height: 1;
 }
-
 
 .subtle-text {
 	color: #6E6740;
@@ -56,8 +79,8 @@ a {
 	color: black;
 	text-decoration: none;
 	/*text-decoration-color: #F6BE17;
-	text-decoration-thickness: 0.2em;
-	text-underline-offset: -0.2em;*/
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: -0.2rem;*/
 	background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #F6BE17 70%);
   display: inline;
 }
@@ -85,8 +108,8 @@ a.subtle-text {
 hr {
 	border: 1px solid #DED6AA;
 	width: 100%;
-	margin-block-start: 2em;
-	margin-block-end: 2em;
+	margin-block-start: 40px;
+	margin-block-end: 40px;
 }
 
 ::selection {
@@ -96,22 +119,24 @@ hr {
 	background: #F7D776; /* Gecko Browsers */
   }
 
-/* site content full-width or not */
+/* site content wrapper and padding */
 
-.reduced-width {
-	width: 70%;
-	padding-top: 3em;
-	padding-bottom: 9em;
-	padding-left: 6em;
-	padding-right: 6em;
+.body-content {
+	width: 70vw;
+	padding-top: 100px;
+	padding-bottom: 180px;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 
-.full-width {
-	width: 100%;
-	padding-top: 3em;
-	padding-bottom: 9em;
-	padding-left: 6em;
-	padding-right: 6em;
+@media (max-width: 800px) {
+	.body-content {
+		width: calc(100vw - 40px);
+		padding-top: 40px;
+		padding-bottom: 180px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 
@@ -123,115 +148,169 @@ header {
 }
 
 nav {
-	padding: 1em 3em 1em 3em;
+	padding: 20px 60px 20px 60px;
 	background-color:#F8F2D7;
 	border-bottom: 2px solid #DED6AA;
-}
-
-div.home {
 	display: flex;
-	list-style: none;
-	align-items: left;
-
-	/* this is here to override the user agent stylesheet */
-	padding-inline-start: 0px;
-
-}
-
-nav ul {
-	display: flex;
-	list-style: none;
-	margin-block-start: 0em;
-	margin-block-end: 0em;
 	justify-content: space-between;
-
-	/* this is here to override the user agent stylesheet */
-	padding-inline-start: 0px;
-
 }
 
-nav li {
-	align-content: center;
+@media (max-width: 800px) {
+	nav {
+		padding: 20px 20px 20px 20px;
+	}
 }
 
-a.homelink {
+nav div.home {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+nav div.other-links {
+	display: flex;
+	flex-direction: row;
+}
+
+nav a.homelink {
+	display: flex;
 	font-family: "Instrument Serif", Georgia, sans-serif;
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 2rem;
 	font-style: italic;
 	color: #4C54E3;
 	background: none;
-	float: left;
 }
 
-a.navlink {
+nav a.navlink {
+	display: flex;
 	font-weight: 400;
 	text-decoration: none;
-	float: right;
 	background: none;
+	margin-left: 40px;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
-a.navlink:hover {
+nav a.navlink:hover {
 	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F6BE17 0%);
   display: inline;
 }
 
-/* table styling */
+/* mobile navigation stuff */
 
-td {
-	padding: 0.5em 0em 0.5em 0em;
-	vertical-align: top;
+nav a.open-menu {
+  display: none;
+	text-decoration: none;
+	background: none;
+	flex-wrap: wrap;
+	height: 22px;
 }
+
+nav a.open-menu:hover {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F6BE17 0%);
+}
+
+/* When the screen is less than 800px wide, don't display any nav links (navlink) and display  */
+@media screen and (max-width: 800px) {
+  nav div.other-links {
+		display: none;
+	}
+  nav a.open-menu {
+    display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+  }
+
+	nav {
+		flex-direction: column;
+	}
+
+	nav div.other-links {
+		flex-direction: column;
+	}
+
+	nav div.other-links.responsive{
+		display: flex;
+		align-items: flex-end;
+	}
+
+	nav div.other-links.responsive a.navlink{
+		margin-left: 0px;
+		margin-block-start: 10px;
+		margin-block-end: 10px;
+	}
+
+}
+
+
 
 /* CV table specific styling */
 
-table.CV {
+div.CV {
 	width: 100%;
-	table-layout: fixed;
 }
 
-td.CV-table-date {
-	/* sets width of first column in CV table */
-	width: 25%;
-	margin-top: 0em;
+div.CV-row {
+	display: flex;
+	flex-direction: row;
+  margin-block-end: 20px;
 }
 
-td.CV-table {
-	/* overriding user agent stylesheet */
-	margin-block-start: 0em;
-	margin-block-end: 0em;
+@media (max-width: 800px) {
+  div.CV-row {
+    flex-direction: column;
+  }
+
+	p.position-headers {
+		margin-block-end: 0px !important;
+	}
+}
+
+div.CV-table-date {
+	flex: 0.25;
+	margin-top: 0px;
+}
+
+div.CV-table {
+	flex: 0.75;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
 p.position-headers {
 	margin-block-start: 0;
-	margin-block-end: 1em;
+	margin-block-end: 1px;
 	font-weight: 600;
 }
 
 p.position-responsibilities {
-	margin-bottom: 1em;
+	margin-bottom: 20px;
 }
 
 /* contact form styling */
 
 label.help-text {
-	font-size: 0.75em;
-	margin-block-start: 1em;
+	font-size: 0.75rem;
+	margin-block-start: 20px;
 	color: #7e6900;
 }
 
 input, textarea {
 	font-family: "Rubik", Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 
-	padding: 0.5em;
-	margin-block-start: 1em;
-	margin-block-end: 2em;
+	padding: 10px;
+	margin-block-start: 20px;
+	margin-block-end: 40px;
 	width: 100%;
 
 	border: 2px solid #DED6AA;
 	border-radius: 4px;
 	background-color: #FAF4D7;
+
+	box-sizing: border-box;
 }
 
 input:hover, textarea:hover {
@@ -246,13 +325,13 @@ input:focus, textarea:focus{
 
 button {
 	font-family: "Rubik", Helvetica, sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 600;
 	width: 30%;
 	display: block;
-	margin-block-end: 0.5em;
+	margin-block-end: 10px;
 
-	padding: 0.5em;
+	padding: 10px;
 	border: 3px solid #4C54E3;
 	border-radius: 4px;
 	background-color: #F8F2D7;
@@ -278,11 +357,11 @@ button:focus {
 .project-card {
 	/*border: 2px solid #e8c100;
 	border-radius: 12px;*/
-	padding: 2em;
-	margin-block-end: 2em;
+	padding: 2rem;
+	margin-block-end: 2rem;
 
 	display: flex;
-	column-gap: 2em;
+	column-gap: 2rem;
 }
 
 span.project-thumbnail {
@@ -302,16 +381,16 @@ span.project-details {
 }
 
 h2.project-tagline {
-	margin-block-start: 0em;
-	margin-block-end: 0.5em;
+	margin-block-start: 0rem;
+	margin-block-end: 0.5rem;
 }
 
 h3.project-title {
 	color: black;
 	background-color: none;
 	font-weight: 400;
-	margin-block-start: 0em;
-	margin-block-end: 1.5em;
+	margin-block-start: 0rem;
+	margin-block-end: 1.5rem;
 	color: #7e6900;
 }
 

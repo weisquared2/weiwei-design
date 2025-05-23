@@ -12,21 +12,19 @@ As a lifelong learner, I'm a proudly self-taught designer with roots in visual d
 
 Most recently, I lead a team of product designers working on cross-functional UX alignment at [Unity](https://unity.com/).
 
-<table class="CV">
-        <tbody>
-            {% for job in site.jobs reversed %}
-            <tr>
-                <td class="CV-table-date">
+<div class="CV">
+        {% for job in site.jobs reversed %}
+        <div class="CV-row">
+            <div class="CV-table-date">
                     <p class="position-headers">{{ job.job-date }}</p>
-                </td>
-                <td class="CV-table">
+            </div>
+            <div class="CV-table">
                     <p class="position-headers">{{ job.job-position }} @ <a href= "{{ job.company-url }}"> {{ job.company-name }} </a></p>
                     <p class="position-responsibilities"> {{job.content}} </p>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-</table>
+            </div>
+        </div>
+        {% endfor %}
+</div>
 
 ## Skills & Tools
 
@@ -35,3 +33,5 @@ I'm well-versed in UX skills & tools across the UX spectrum. I love designing ho
 I might have been a UX developer in another life, and I'm not ruling it out for this one. I love digging into code to see how it works, and occasionally write my own (like this website!). I take great pleasure in getting into the nitty-gritty of technical concepts.
 
 I could never work alone. I love working with people with all sorts of backgrounds, and I'm constantly learning new ways of working together to leverage the skills of groups I work with. Strategic, intentional communication is at the heart of everything I do: from high-level stakeholder presentations to having effective, well-framed 1:1 conversations.
+
+<i>Je parle français aussi!</i>
