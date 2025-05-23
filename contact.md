@@ -8,6 +8,8 @@ title: Contact
 
 Let's have some fun! You can find me on [LinkedIn](https://linkedin.com/in/weiweilin), or fill out the form below to email me directly.
 
+Je parle français aussi.
+
 ---
 
 <!-- Formspree form -->

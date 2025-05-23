@@ -153,6 +153,7 @@ nav {
 	border-bottom: 2px solid #DED6AA;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -165,12 +166,13 @@ nav div.home {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
+	width: 100%;
 }
 
 nav div.other-links {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 nav a.homelink {
@@ -191,11 +193,12 @@ nav a.navlink {
 	margin-left: 40px;
 	align-content: center;
 	flex-wrap: wrap;
+	height: 22px;
+	white-space: nowrap;
 }
 
 nav a.navlink:hover {
 	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F6BE17 0%);
-  display: inline;
 }
 
 /* mobile navigation stuff */
@@ -234,6 +237,7 @@ nav a.open-menu:hover {
 	nav div.other-links.responsive{
 		display: flex;
 		align-items: flex-end;
+		width: 100%;
 	}
 
 	nav div.other-links.responsive a.navlink{
