@@ -1,7 +1,5 @@
 /* import fonts, somehow need to import weights individually? */
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -63,8 +61,18 @@ h2  {
 
 }
 
+h3 {
+	font-family: "Instrument Serif", Georgia, sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1;
+	font-style: italic;
+	color: #F0653A;
+}
+
+
 /* commenting style */
-h3  {
+h4  {
 	color: magenta;
 	font-weight: 700;
 	font-size: 1.2rem;
@@ -119,6 +127,11 @@ hr {
 	background: #F7D776; /* Gecko Browsers */
   }
 
+img {
+	object-fit: contain;
+	width: 100%;
+}
+
 /* site content wrapper and padding */
 
 .body-content {
@@ -129,8 +142,24 @@ hr {
 	padding-right: 120px;
 }
 
+.body-content-wide {
+	width: calc(100vw - 240px);
+	padding-top: 100px;
+	padding-bottom: 180px;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
 @media (max-width: 800px) {
 	.body-content {
+		width: calc(100vw - 40px);
+		padding-top: 40px;
+		padding-bottom: 180px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.body-content-wide {
 		width: calc(100vw - 40px);
 		padding-top: 40px;
 		padding-bottom: 180px;
@@ -331,11 +360,13 @@ button {
 	font-family: "Rubik", Helvetica, sans-serif;
 	font-size: 1rem;
 	font-weight: 600;
-	width: 30%;
 	display: block;
 	margin-block-end: 10px;
 
 	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 30%;
 	border: 3px solid #4C54E3;
 	border-radius: 4px;
 	background-color: #F8F2D7;
@@ -343,62 +374,170 @@ button {
 }
 
 button:hover, button:active {
-	border: 2px solid black;
+	border: 3px solid #4C54E3;
+	background-color: #4C54E3;
+	color: #F8F2D7;
 	cursor: pointer;
 }
 
 button:focus {
-	border: 2px solid black;
+	border: 3px solid black;
 	outline: 6px solid #e8c100;
+}
+
+button:disabled, button:disabled:hover {
+	border: 2px solid #6E6740;
+	font-weight: 400;
+	color: #6E6740;
+	background-color: #F8F2D7;
+	cursor: default;
 }
 
 ::placeholder {
 	color:#7e6900;
 }
 
-/* project styling */
+/* project summary styling */
 
-.project-card {
-	/*border: 2px solid #e8c100;
-	border-radius: 12px;*/
-	padding: 2rem;
-	margin-block-end: 2rem;
-
+div.project-summary {
 	display: flex;
-	column-gap: 2rem;
+	flex-direction: row;
+	margin-block-end: 40px;
 }
 
-span.project-thumbnail {
-	display: inline-block;
-	width: 30%;
+div.project-summary-visual {
+	width: 50%;
+	align-content: center;
 }
 
 img.project-thumbnail {
-	border-radius: 6px;
-	max-width: 100%;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	border-radius: 4px;
 }
 
-span.project-details {
-	display: inline-block;
-	width: 60%;
-	vertical-align: middle;
+div.project-summary-text {
+	width: 50%;
+	padding-left: 30px;
+	align-content: center;
 }
 
-h2.project-tagline {
+h2.project-title {
+	font-size: 4rem;
 	margin-block-start: 0rem;
 	margin-block-end: 0.5rem;
 }
 
-h3.project-title {
-	color: black;
-	background-color: none;
-	font-weight: 400;
-	margin-block-start: 0rem;
-	margin-block-end: 1.5rem;
-	color: #7e6900;
+p.project-company-meta {
+	font-weight: 500;
+	color: #4C54E3;
+	margin-block-end: 0rem;
 }
 
-p.project-responsibilities {
-	color: #7e6900;
-	font-style: italic;
+a.project-company-link {
+	color: #4C54E3;
+}
+
+p.project-application-type {
+	font-weight: 500;
+	color: #4C54E3;
+	margin-block-start: 0rem;
+	margin-block-end: 0rem;
+}
+
+p.project-my-impact {
+	margin-block-start: 0.5rem;
+	color: #4C54E3;
+}
+
+@media (max-width: 960px) {
+	div.project-summary {
+		flex-direction: column;
+	}
+
+	div.project-summary-visual {
+		width: 100%;
+	}
+
+	div.project-summary-text {
+		width: 100%;
+		padding-left: 0px;
+	}
+
+	h2.project-title {
+		font-size: 3rem;
+		margin-block-start: 1rem;
+		margin-block-end: 0.5rem;
+	}
+
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+	h2.project-title {
+		font-size: 4rem;
+		margin-block-start: 1rem;
+		margin-block-end: 0.5rem;
+	}
+}
+
+/* project page styling */
+
+div.project-header {
+	display: flex;
+	flex-direction: row;
+	margin-block-end: 80px;
+	align-content: center;
+}
+
+div.project-header-title {
+	width: 70%;
+	align-content: center;
+	margin-right: 40px;
+}
+
+a.back-link {
+	font-weight: 400;
+	color: #4C54E3;
+	text-decoration: none;
+	background: none;
+	height: 22px;
+	}
+
+a.back-link:hover {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #F6BE17 0%);
+}
+
+h2.project-title {
+	margin-block-start: 1rem;
+}
+
+div.project-header-meta {
+	width: 30%;
+	height: fit-content;
+	align-content: center;
+	align-self: center;
+	padding: 0px 20px 0px 20px;
+	border: 3px solid #4C54E3;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+@media (max-width: 1200px) {
+	div.project-header {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	div.project-header-title {
+		width: 100%;
+		margin-right: 0px;
+		margin-block-end: 20px;
+	}
+
+	div.project-header-meta {
+		width: auto;
+		align-self: flex-start;
+	}
 }
