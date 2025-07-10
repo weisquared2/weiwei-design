@@ -15,9 +15,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 You can find info about how the directory should be structured on the [Jekyll site](http://jekyllrb.com/docs/structure/) or in [this example project](https://github.com/ablarry91/portfolio).
 
-## Command Line BS
+## Command Line
 
-If you're fucking around with command-line and you've forgotten how Vim works, at least here's how to exit edit mode in Terminal if you're panicking:
+How to exit edit mode in Terminal:
 
 + To save: press `esc`, type `:w`, hit `enter`
 

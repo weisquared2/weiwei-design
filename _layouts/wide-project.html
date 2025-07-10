@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <script type="text/javascript" src='{{ site.baseurl }}/js/openMobileNav.js'></script>
+    <script src="https://kit.fontawesome.com/c94194f391.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,11 +30,11 @@
         <div class="body-content-wide">
           <div class="project-header">
             <div class="project-header-title">
-              <a href="/projects" class="back-link">&#x2190; Back to projects page</a>
+              <a href="/projects" class="back-link"><i class="fa-solid fa-arrow-left-long"></i> Back to projects page</a>
               <h2 class="project-title">{{ page.project-title }}</h2>
             </div>
             <div class="project-header-meta">
-              <p class="project-company-meta"><a href= "{{ page.company-link }}" class="project-company-link">{{ page.company-name }}</a> &#x2734; {{ page.company-industry }} &#x2734; {{ page.company-type }} </p>
+              <p class="project-company-meta"><a href= "{{ page.company-link }}" class="project-company-link">{{ page.company-name }}</a> <i class="fa-solid fa-star-of-life fa-xs"></i> {{ page.company-industry }} <i class="fa-solid fa-star-of-life fa-xs"></i> {{ page.company-type }} </p>
               <p class="project-application-type">{{ page.application-type }}</p>
               <p class="project-my-impact">My impact: {{ page.my-impact }}</p>
             </div>
