@@ -22,7 +22,7 @@ title: Projects
                 {% if project.WIP == true %}
                   <button disabled>Full project coming soon</button>
                 {% else %}
-                  <a href="{{ project.slug }}"><button>See project <i class="fa-solid fa-arrow-right-long"></i></button></a>
+                  <a href="projects/{{ project.slug }}"><button>See project <i class="fa-solid fa-arrow-right-long"></i></button></a>
                 {% endif %}
             </div>
             </div>

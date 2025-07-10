@@ -1,6 +1,6 @@
 ---
 title: Data Labeller
-
+slug: ailabeller
 display: true
 WIP: false
 

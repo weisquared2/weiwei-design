@@ -4,4 +4,4 @@ collections:
   jobs:
   projects:
     output: true
-    permalink: /projects/:title
+    permalink: /projects/:slug
