@@ -1,6 +1,6 @@
 ---
 title: Unity Design System
-slug: unitydesignsystem
+
 display: true
 WIP: false
 
