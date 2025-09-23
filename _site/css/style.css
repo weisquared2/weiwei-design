@@ -70,9 +70,8 @@ h3 {
 	color: #F0653A;
 }
 
-
 /* commenting style */
-h4  {
+h6  {
 	color: magenta;
 	font-weight: 700;
 	font-size: 1.2rem;
@@ -151,6 +150,10 @@ img {
 	padding-right: 120px;
 }
 
+.project-content {
+	width: 70%;
+}
+
 @media (max-width: 800px) {
 	.body-content {
 		width: calc(100vw - 40px);
@@ -166,6 +169,10 @@ img {
 		padding-bottom: 180px;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	.project-content {
+		width: 100%;
 	}
 }
 
@@ -403,11 +410,11 @@ button:disabled, button:disabled:hover {
 div.project-summary {
 	display: flex;
 	flex-direction: row;
-	margin-block-end: 40px;
+	margin-block-end: 60px;
 }
 
 div.project-summary-visual {
-	width: 50%;
+	width: 55%;
 	align-content: center;
 }
 
@@ -419,7 +426,7 @@ img.project-thumbnail {
 }
 
 div.project-summary-text {
-	width: 50%;
+	width: 45%;
 	padding-left: 30px;
 	align-content: center;
 }
@@ -430,26 +437,30 @@ h2.project-title {
 	margin-block-end: 0.5rem;
 }
 
+p.project-subtitle {
+	/*color: #4C54E3;*/
+}
+
 p.project-company-meta {
 	font-weight: 500;
-	color: #4C54E3;
-	margin-block-end: 0rem;
-}
-
-a.project-company-link {
-	color: #4C54E3;
-}
-
-p.project-application-type {
-	font-weight: 500;
-	color: #4C54E3;
-	margin-block-start: 0rem;
+	/*color: #4C54E3;*/
 	margin-block-end: 0rem;
 }
 
 p.project-my-impact {
 	margin-block-start: 0.5rem;
-	color: #4C54E3;
+	/*color: #4C54E3;*/
+}
+
+a.project-company-link {
+	/*color: #4C54E3;*/
+}
+
+p.project-application-type {
+	font-weight: 500;
+	/* color: #4C54E3;*/
+	margin-block-start: 0rem;
+	margin-block-end: 1rem;
 }
 
 @media (max-width: 960px) {
@@ -476,7 +487,7 @@ p.project-my-impact {
 
 @media (min-width: 960px) and (max-width: 1200px) {
 	h2.project-title {
-		font-size: 4rem;
+		font-size: 3rem;
 		margin-block-start: 1rem;
 		margin-block-end: 0.5rem;
 	}

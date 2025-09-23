@@ -3,18 +3,18 @@ title: Data Labeller
 slug: ailabeller
 display: true
 WIP: false
+layout: wide-project
 
-project-title: Streamlining AI development workflows.
+project-title: Centralizing AI development pipelines.
+project-subtitle: I worked on tools to connect AI developers and data labellers, improving workflow clarity and coordination.
 company-name: Element AI
 company-link: https://www.servicenow.com/
 company-industry: AI
 company-type: B2B
 application-type: Web Application
-my-impact: UX design
-thumbnail-path: /assets/2_ailabeller/ailabeller_thumb.png
+my-impact: UX & UI design
+thumbnail-path: /assets/3_ailabeller/ailabeller_thumb.png
 thumbnail-alt: Screenshot of Data Labeller application, a web application that manages AI labelling tasks.
-
-layout: wide-project
 ---
 
 ### Project
@@ -31,25 +31,25 @@ Starting a simple labelling task involved navigating a fragmented workflow acros
 
 I conducted in-context observations and desk research on the existing cross-platform task creation process. I paired these with high-level user flows that were the outputs of a design sprint run by my colleagues.
 
-![A diagram of a scattered labelling workflow and a photo of a man working at a desk in an office.](/assets/2_ailabeller/labeller_workflow.png "Existing workflow of AI Labeller being observed in context.")
+![A diagram of a scattered labelling workflow and a photo of a man working at a desk in an office.](/assets/3_ailabeller/labeller_workflow.png "Existing workflow of AI Labeller being observed in context.")
 
 Using these inputs, I delivered revised user flows and rough prototypes of the task creation process. I validated the technical feasibility of the proposed prototypes with the front- and back-end developers.
 
-![A rough low-fidelity prototype of AI Labeller.](/assets/2_ailabeller/labeller_low fi.png "Low-fidelity Comic Sans mockups of AI Labeller.")
+![A rough low-fidelity prototype of AI Labeller.](/assets/3_ailabeller/labeller_low fi.png "Low-fidelity Comic Sans mockups of AI Labeller.")
 
 I worked with the product owner and a UX researcher to identify what we wanted to focus on in user interviews, focusing on new concepts and flows that needed user validation.
 
 Based on interview insights, I refined the high-fidelity prototypes, which were then implemented by the developers.
 
-![A high-fidelity prototype of AI Labeller dashboard.](/assets/2_ailabeller/labeller_dashboard.png "A high-fidelity prototype of AI Labeller dashboard.")
+![A high-fidelity prototype of AI Labeller dashboard.](/assets/3_ailabeller/labeller_dashboard.png "A high-fidelity prototype of AI Labeller dashboard.")
 
 ### End result
 
 The resulting task creation process was much easier to use and learn, and eliminated the need to jump between platforms just to initiate a task. This also made the product significantly more appealing in sales demos.
 
-![A high-fidelity prototype of AI Labeller create task screen.](/assets/2_ailabeller/labeller_create task 1.png "A high-fidelity prototype of AI Labeller create task screen.")
+![A high-fidelity prototype of AI Labeller create task screen.](/assets/3_ailabeller/labeller_create task 1.png "A high-fidelity prototype of AI Labeller create task screen.")
 
-![A high-fidelity prototype of AI Labeller create task screen.](/assets/2_ailabeller/labeller_create task 2.png "A high-fidelity prototype of AI Labeller create task screen.")
+![A high-fidelity prototype of AI Labeller create task screen.](/assets/3_ailabeller/labeller_create task 2.png "A high-fidelity prototype of AI Labeller create task screen.")
 
 ### Reflection
 

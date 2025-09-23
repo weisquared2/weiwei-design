@@ -16,11 +16,12 @@ title: Projects
 
             <div class="project-summary-text">
                 <h2 class="project-title"> {{ project.project-title }} </h2>
+                <p class="project-subtitle"> {{ project.project-subtitle }} </p>
+                <p class="project-my-impact">My impact: {{ project.my-impact }}</p>
                 <p class="project-company-meta"><a href= "{{ project.company-link }}" class="project-company-link">{{ project.company-name }}</a>  <i class="fa-solid fa-star-of-life fa-xs"></i>  {{ project.company-industry }}  <i class="fa-solid fa-star-of-life fa-xs"></i>  {{ project.company-type }}</p>
                 <p class="project-application-type">{{ project.application-type }}</p>
-                <p class="project-my-impact">My impact: {{ project.my-impact }}</p>
                 {% if project.WIP == true %}
-                  <button disabled>Full project coming soon</button>
+                  <button disabled><i class="fa-solid fa-lock"></i> Contact to see full project</button>
                 {% else %}
                   <a href="projects/{{ project.slug }}"><button>See project <i class="fa-solid fa-arrow-right-long"></i></button></a>
                 {% endif %}

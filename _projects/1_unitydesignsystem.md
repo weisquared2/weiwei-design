@@ -3,20 +3,18 @@ title: Unity Design System
 slug: unitydesignsystem
 display: true
 WIP: false
+layout: wide-project
 
-project-title: A design system built with community.
+project-title: Bringing unity to Unity's design culture.
+project-subtitle: I built the systems, relationships, and documentation that brought 30+ development teams into alignment, turning design quality into a cross-functional priority.
 company-name: Unity
 company-link: https://www.foundations.unity.com/
 company-industry: 3D & Gaming
 company-type: B2B2C
 application-type: Desktop Application
-my-impact: management, UX design, user research
+my-impact: management, UX design, user research, cross-functional collaboration
 thumbnail-path: /assets/1_designsystem/designsystem_thumb.png
 thumbnail-alt: Screenshot of the Tab page of the Unity Editor Design System.
-
-display: true
-WIP: false
-layout: wide-project
 ---
 
 ### Project
